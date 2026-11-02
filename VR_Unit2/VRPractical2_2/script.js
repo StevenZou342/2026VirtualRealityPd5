@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded",function() {
   dude.ds = 0.01;
 
   sun.opacity = 0;
-  sun.dopacity = 0.01;
+  sun.dopacity = 0.001;
 
   sun.setAttribute("material", "transparent", true);
   sun.setAttribute("material", "opacity", 0);
