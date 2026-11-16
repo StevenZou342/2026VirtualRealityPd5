@@ -1,20 +1,22 @@
 let scene;
 let mechTemplate;
-let army= [];
-window.addEventListener("DOMContentLoaded",function() {
+let army = [];
+let mech;
+
+window.addEventListener("DOMContentLoaded", function () {
   scene = document.querySelector("a-scene");
-  
   mechTemplate = document.getElementById("mech-1");
-for(let x=1; x<2;x+=2){
-  for(let z=1; z<2; z+=2){
-  let mech2= new Mech(x,1,z);
-    army.push(mech2);
+
+  for (let x = -3; x <= 3; x += 2) {
+    for (let z = -3; z <= 3; z += 2) {
+       mech = new Mech(x, 15, z);
+      army.push(mech);
+    }
   }
-}
+
   loop();
-})
-function loop(){
+});
 
-
-  window.requestAnimationFrame( loop );
+function loop() {
+  window.requestAnimationFrame(loop);
 }
