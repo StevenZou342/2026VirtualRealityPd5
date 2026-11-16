@@ -8,8 +8,8 @@ window.addEventListener("DOMContentLoaded",function() {
 
   //Challenge 4: Create an array of dudes at random locations.
   dude= new Dude(0,1,-5);
-   for (let x = -50; x <= 10; x += 2) {
-    for (let z = -50; z <= 10; z += 2) {
+   for (let x = -10; x <= 10; x += 2) {
+    for (let z = -10; z <= 10; z += 2) {
        dude = new Dude(x, 1, z);
       dudes.push(dude);
     }
