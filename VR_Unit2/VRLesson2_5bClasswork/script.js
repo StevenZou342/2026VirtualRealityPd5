@@ -4,6 +4,7 @@ let snowmen = [];
 let clouds = [];
 let snowflakes = [];
 
+
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene"); //CSS Selector
 
